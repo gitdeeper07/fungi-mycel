@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel", "setuptools_scm[toml]>=6.2"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fungi-mycel"
+dynamic = ["version"]
+description = "FUNGI-MYCEL: A Quantitative Framework for Decoding Mycelial Network Intelligence"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    {name = "Samir Baladi", email = "gitdeeper@gmail.com"},
+]
+keywords = [
+    "mycology",
+    "fungal-intelligence",
+    "mycelial-networks",
+    "bioelectricity",
+    "wood-wide-web",
+    "mycorrhiza",
+    "ecology",
+    "machine-learning",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Bio-Informatics",
+]
+
+[project.urls]
+Homepage = "https://fungi-mycel.netlify.app"
+Documentation = "https://fungi-mycel.readthedocs.io"
+Repository = "https://gitlab.com/gitdeeper07/fungi-mycel"
+"Bug Tracker" = "https://gitlab.com/gitdeeper07/fungi-mycel/-/issues"
+DOI = "https://doi.org/10.14293/FUNGI-MYCEL.2026.001"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+packages = ["fungi_mycel"]
+
+[tool.setuptools_scm]
+write_to = "src/fungi_mycel/_version.py"

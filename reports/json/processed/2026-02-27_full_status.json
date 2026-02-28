@@ -1,0 +1,67 @@
+{
+  "timestamp": "2026-02-27T06:00:00Z",
+  "sites": {
+    "collapse": [
+      {"id": "sudbury-01", "country": "Canada", "mnis": 0.82},
+      {"id": "caledonian-03", "country": "Scotland", "mnis": 0.79}
+    ],
+    "critical": [
+      {"id": "amazon-02", "country": "Brazil", "mnis": 0.71},
+      {"id": "boreal-05", "country": "Sweden", "mnis": 0.68},
+      {"id": "mediterranean-03", "country": "Spain", "mnis": 0.65},
+      {"id": "temperate-12", "country": "Germany", "mnis": 0.63},
+      {"id": "tropical-07", "country": "Colombia", "mnis": 0.62}
+    ],
+    "moderate": [
+      {"id": "temperate-08", "country": "Germany", "mnis": 0.58},
+      {"id": "boreal-12", "country": "Canada", "mnis": 0.55},
+      {"id": "tropical-04", "country": "Colombia", "mnis": 0.52},
+      {"id": "mediterranean-07", "country": "Morocco", "mnis": 0.49},
+      {"id": "subarctic-03", "country": "Norway", "mnis": 0.46},
+      {"id": "temperate-15", "country": "USA", "mnis": 0.58},
+      {"id": "boreal-08", "country": "Sweden", "mnis": 0.54},
+      {"id": "tropical-11", "country": "Malaysia", "mnis": 0.51},
+      {"id": "mediterranean-09", "country": "Greece", "mnis": 0.48},
+      {"id": "subarctic-06", "country": "Alaska", "mnis": 0.45},
+      {"id": "temperate-22", "country": "Japan", "mnis": 0.59},
+      {"id": "boreal-18", "country": "Siberia", "mnis": 0.53}
+    ],
+    "good": [
+      {"id": "bialowieza-02", "country": "Poland", "mnis": 0.38},
+      {"id": "oregon-armillaria-01", "country": "USA", "mnis": 0.31},
+      {"id": "hokkaido-01", "country": "Japan", "mnis": 0.35},
+      {"id": "sapmi-01", "country": "Norway", "mnis": 0.42},
+      {"id": "andalucia-01", "country": "Spain", "mnis": 0.39},
+      {"id": "temperate-05", "country": "France", "mnis": 0.28},
+      {"id": "boreal-03", "country": "Finland", "mnis": 0.33},
+      {"id": "tropical-02", "country": "Costa Rica", "mnis": 0.36},
+      {"id": "mediterranean-04", "country": "Italy", "mnis": 0.41},
+      {"id": "subarctic-01", "country": "Alaska", "mnis": 0.43},
+      {"id": "temperate-11", "country": "UK", "mnis": 0.29},
+      {"id": "boreal-07", "country": "Russia", "mnis": 0.32},
+      {"id": "tropical-09", "country": "Indonesia", "mnis": 0.37},
+      {"id": "mediterranean-11", "country": "Turkey", "mnis": 0.40},
+      {"id": "subarctic-08", "country": "Greenland", "mnis": 0.44}
+    ],
+    "excellent": [
+      {"id": "bialowieza-01", "country": "Poland", "mnis": 0.19},
+      {"id": "cascade-04", "country": "USA", "mnis": 0.21},
+      {"id": "terra-preta-03", "country": "Brazil", "mnis": 0.22},
+      {"id": "alps-01", "country": "Switzerland", "mnis": 0.18},
+      {"id": "primeval-01", "country": "Belarus", "mnis": 0.23}
+    ]
+  },
+  "statistics": {
+    "total_sites": 39,
+    "mean_mnis": 0.47,
+    "min_mnis": 0.18,
+    "max_mnis": 0.82,
+    "status_counts": {
+      "excellent": 5,
+      "good": 15,
+      "moderate": 12,
+      "critical": 5,
+      "collapse": 2
+    }
+  }
+}

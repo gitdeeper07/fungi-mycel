@@ -1,0 +1,24 @@
+========================================
+FUNGI-MYCEL DAILY REPORT
+========================================
+Date: 2026-02-27
+Time: 06:00 UTC
+
+ACTIVE SITES: 39/39
+MEAN MNIS: 0.47
+CRITICAL ALERTS: 2
+HIGH ALERTS: 3
+
+CRITICAL SITES:
+- sudbury-01 (MNIS: 0.82) - COLLAPSE
+- caledonian-03 (MNIS: 0.79) - CRITICAL
+
+SITES BY STATUS:
+EXCELLENT:  5
+GOOD:      15
+MODERATE:  12
+CRITICAL:   5
+COLLAPSE:   2
+
+For detailed reports see: reports/alerts/
+========================================

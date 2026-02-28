@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "If you use FUNGI-MYCEL in your research, please cite it as below."
+title: "FUNGI-MYCEL: A Quantitative Framework for Decoding Mycelial Network Intelligence, Bioelectrical Communication, and Sub-Surface Ecological Sovereignty"
+authors:
+  - family-names: "Baladi"
+    given-names: "Samir"
+    email: "gitdeeper@gmail.com"
+    orcid: "https://orcid.org/0009-0003-8903-0029"
+    affiliation: "Ronin Institute / Rite of Renaissance"
+version: 1.0.0
+date-released: 2026-03-01
+doi: 10.14293/FUNGI-MYCEL.2026.001
+repository-code: "https://gitlab.com/gitdeeper07/fungi-mycel"
+url: "https://fungi-mycel.netlify.app"
+preferred-citation:
+  type: article
+  title: "FUNGI-MYCEL: A Quantitative Framework for Decoding Mycelial Network Intelligence, Bioelectrical Communication, and Sub-Surface Ecological Sovereignty"
+  authors:
+    - family-names: "Baladi"
+      given-names: "Samir"
+  doi: "10.14293/FUNGI-MYCEL.2026.001"
+  journal: "Nature Microbiology (Submitted)"
+  year: 2026
+  month: 3
+keywords:
+  - "mycology"
+  - "fungal intelligence"
+  - "mycelial networks"
+  - "bioelectricity"
+  - "wood wide web"
+  - "mycorrhiza"
+  - "ecology"
+  - "machine learning"
+  - "fractal geometry"
+  - "soil science"

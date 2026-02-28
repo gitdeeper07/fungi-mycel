@@ -1,0 +1,77 @@
+========================================
+🍄 FUNGI-MYCEL STATUS SUMMARY
+========================================
+Date: 2026-02-27
+Time: 06:00 UTC
+
+🔴 COLLAPSE (2):
+- sudbury-01 (Canada) - MNIS: 0.82
+- caledonian-03 (Scotland) - MNIS: 0.79
+
+🟠 CRITICAL (5):
+- amazon-02 (Brazil) - MNIS: 0.71
+- boreal-05 (Sweden) - MNIS: 0.68
+- mediterranean-03 (Spain) - MNIS: 0.65
+- temperate-12 (Germany) - MNIS: 0.63
+- tropical-07 (Colombia) - MNIS: 0.62
+
+🟡 MODERATE (12):
+- temperate-08 (Germany) - MNIS: 0.58
+- boreal-12 (Canada) - MNIS: 0.55
+- tropical-04 (Colombia) - MNIS: 0.52
+- mediterranean-07 (Morocco) - MNIS: 0.49
+- subarctic-03 (Norway) - MNIS: 0.46
+- temperate-15 (USA) - MNIS: 0.58
+- boreal-08 (Sweden) - MNIS: 0.54
+- tropical-11 (Malaysia) - MNIS: 0.51
+- mediterranean-09 (Greece) - MNIS: 0.48
+- subarctic-06 (Alaska) - MNIS: 0.45
+- temperate-22 (Japan) - MNIS: 0.59
+- boreal-18 (Siberia) - MNIS: 0.53
+
+🔵 GOOD (15):
+- bialowieza-02 (Poland) - MNIS: 0.38
+- oregon-armillaria-01 (USA) - MNIS: 0.31
+- hokkaido-01 (Japan) - MNIS: 0.35
+- sapmi-01 (Norway) - MNIS: 0.42
+- andalucia-01 (Spain) - MNIS: 0.39
+- temperate-05 (France) - MNIS: 0.28
+- boreal-03 (Finland) - MNIS: 0.33
+- tropical-02 (Costa Rica) - MNIS: 0.36
+- mediterranean-04 (Italy) - MNIS: 0.41
+- subarctic-01 (Alaska) - MNIS: 0.43
+- temperate-11 (UK) - MNIS: 0.29
+- boreal-07 (Russia) - MNIS: 0.32
+- tropical-09 (Indonesia) - MNIS: 0.37
+- mediterranean-11 (Turkey) - MNIS: 0.40
+- subarctic-08 (Greenland) - MNIS: 0.44
+
+🟢 EXCELLENT (5):
+- bialowieza-01 (Poland) - MNIS: 0.19
+- cascade-04 (USA) - MNIS: 0.21
+- terra-preta-03 (Brazil) - MNIS: 0.22
+- alps-01 (Switzerland) - MNIS: 0.18
+- primeval-01 (Belarus) - MNIS: 0.23
+
+========================================
+📊 SUMMARY STATISTICS:
+========================================
+Total Sites:     39
+Mean MNIS:       0.47
+Range:           0.18 - 0.82
+
+Status Distribution:
+🟢 EXCELLENT:     5 (12.8%)
+🔵 GOOD:         15 (38.5%)
+🟡 MODERATE:     12 (30.8%)
+🟠 CRITICAL:      5 (12.8%)
+🔴 COLLAPSE:      2 (5.1%)
+
+Critical Alerts: 2 (sudbury-01, caledonian-03)
+High Alerts:     3 (amazon-02, boreal-05, mediterranean-03)
+Medium Alerts:   1 (temperate-08)
+
+========================================
+✅ All systems operational
+Next report: 2026-02-28 06:00 UTC
+========================================

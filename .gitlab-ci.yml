@@ -1,0 +1,108 @@
+image: python:3.10
+
+variables:
+  PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
+  PROJECT_NAME: "FUNGI-MYCEL"
+  FRAMEWORK_VERSION: "1.0.0"
+
+cache:
+  paths:
+    - .cache/pip
+    - venv/
+    - .venv/
+
+stages:
+  - validate
+  - test
+  - build
+  - benchmark
+  - deploy
+
+before_script:
+  - python --version
+  - pip install --upgrade pip setuptools wheel
+  - pip install virtualenv
+  - virtualenv venv
+  - source venv/bin/activate
+  - pip install -r requirements.txt
+  - pip install pytest pytest-cov pytest-benchmark
+
+validate:
+  stage: validate
+  script:
+    - echo "🔬 Validating FUNGI-MYCEL framework v$FRAMEWORK_VERSION"
+    - python -c "import numpy; import scipy; import pandas; print('✓ Core dependencies loaded')"
+    - python -c "from fungi_mycel import MNIS; print('✓ MNIS module loaded successfully')"
+    - python scripts/validate_dataset.py --sites 39 --mnus 2648
+  artifacts:
+    reports:
+      dotenv: validation.env
+
+unit-test:
+  stage: test
+  script:
+    - pytest tests/unit/ -v --cov=fungi_mycel --cov-report=term --cov-report=xml
+    - pytest tests/hypothesis/ -v --hypothesis-show-statistics
+  coverage: '/(?i)total.*? (100(?:\.0+)?\%|[1-9]?\d(?:\.\d+)?\%)$/'
+  artifacts:
+    paths:
+      - coverage.xml
+      - .coverage
+    reports:
+      coverage_report:
+        coverage_format: cobertura
+        path: coverage.xml
+
+integration-test:
+  stage: test
+  script:
+    - pytest tests/integration/ -v --benchmark-skip
+    - python scripts/test_parameter_coupling.py --check rho_e_Ktopo=0.917
+  artifacts:
+    paths:
+      - test_reports/
+    when: always
+
+benchmark:
+  stage: benchmark
+  script:
+    - pytest tests/benchmarks/ -v --benchmark-only --benchmark-json=benchmark_results.json
+    - python scripts/validate_accuracy.py --expected 91.8 --tolerance 1.5
+  artifacts:
+    paths:
+      - benchmark_results.json
+    reports:
+      metrics: benchmark_results.json
+
+build-package:
+  stage: build
+  script:
+    - pip install build twine
+    - python -m build
+    - python -m twine check dist/*
+  artifacts:
+    paths:
+      - dist/
+    expire_in: 1 week
+
+pages:
+  stage: deploy
+  script:
+    - pip install mkdocs mkdocs-material mkdocstrings[python]
+    - mkdocs build --site-dir public
+    - cp -r dashboard/* public/ 2>/dev/null || true
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
+    - develop
+
+notify:
+  stage: deploy
+  script:
+    - echo "🎉 FUNGI-MYCEL v$FRAMEWORK_VERSION validation complete"
+    - echo "MNIS Accuracy: 91.8% | Early Warning: 42 days | Dataset: 2,648 MNUs"
+  only:
+    - tags
+  when: on_success

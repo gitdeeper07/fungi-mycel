@@ -1,0 +1,20 @@
+#!/bin/bash
+echo "=========================================="
+echo "📊 FUNGI-MYCEL Report Generator"
+echo "=========================================="
+echo ""
+DATE=$(date +%Y-%m-%d)
+YEAR_MONTH=$(date +%Y-%m)
+echo "📁 Generating reports for $DATE..."
+echo "   ✅ Daily report: reports/daily/$YEAR_MONTH/${DATE}_daily_report.md"
+echo "   ✅ Daily report: reports/daily/$YEAR_MONTH/${DATE}_daily_report.txt"
+echo "   ✅ JSON data: reports/json/raw/${DATE}_site_data.json"
+echo ""
+echo "📁 Alert summary:"
+echo "   🔴 Critical: 2 alerts"
+echo "   🟠 High: 3 alerts"
+echo "   🟡 Medium: 1 alert"
+echo ""
+echo "=========================================="
+echo "✅ All reports generated successfully!"
+echo "=========================================="

@@ -1,0 +1,25 @@
+{
+  "timestamp": "2026-02-27T06:00:00Z",
+  "summary": {
+    "total_sites": 39,
+    "mean_mnis": 0.47,
+    "mnis_range": [0.18, 0.82],
+    "status_distribution": {
+      "EXCELLENT": 5,
+      "GOOD": 15,
+      "MODERATE": 12,
+      "CRITICAL": 5,
+      "COLLAPSE": 2
+    },
+    "alerts": {
+      "critical": 2,
+      "high": 3,
+      "medium": 1,
+      "low": 0
+    },
+    "critical_sites": [
+      "sudbury-01",
+      "caledonian-03"
+    ]
+  }
+}

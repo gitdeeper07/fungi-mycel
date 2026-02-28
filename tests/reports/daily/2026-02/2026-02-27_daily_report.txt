@@ -1,0 +1,69 @@
+========================================
+FUNGI-MYCEL DAILY MONITORING REPORT
+========================================
+Date: 2026-02-27
+Time: 06:00 UTC
+Report ID: FMD-2026-02-27-TXT
+
+========================================
+EXECUTIVE SUMMARY
+========================================
+Active Sites: 39/39 (100%)
+Total MNUs: 2,648
+Mean MNIS: 0.47 (MODERATE)
+Stress Events: 3
+Early Warnings: 5
+
+========================================
+CRITICAL ALERTS
+========================================
+
+SITE: sudbury-01 (Canada)
+MNIS: 0.82 (COLLAPSE)
+Parameters:
+  - η_NW: 0.28 (CRITICAL)
+  - ρ_e: 0.19 (CRITICAL)
+  - BFS: 0.15 (CRITICAL)
+ACTION: EMERGENCY INTERVENTION REQUIRED
+Deadline: 2026-02-28
+
+SITE: caledonian-03 (Scotland)
+MNIS: 0.79 (CRITICAL)
+Parameters:
+  - ∇C: 0.41 (CRITICAL)
+  - K_topo: 1.38 (CRITICAL)
+  - SER: 1.52 (PARASITIC)
+ACTION: Increase planting density to 80 stems/ha
+Deadline: 2026-03-15
+
+========================================
+HIGH ALERTS
+========================================
+amazon-02 (Brazil)      | MNIS: 0.71 | Due: 2026-03-07
+boreal-05 (Sweden)      | MNIS: 0.68 | Due: 2026-03-05
+mediterranean-03 (Spain)| MNIS: 0.65 | Due: 2026-03-10
+
+========================================
+SITE STATUS DISTRIBUTION
+========================================
+EXCELLENT:  5 sites (12.8%)
+GOOD:      15 sites (38.5%)
+MODERATE:  12 sites (30.8%)
+CRITICAL:   5 sites (12.8%)
+COLLAPSE:   2 sites (5.1%)
+
+========================================
+TODAY'S SCHEDULE
+========================================
+08:00 - Deploy electrodes at sudbury-01
+10:30 - Collect soil samples at caledonian-03
+14:00 - ICP-MS analysis for amazon-02
+16:00 - Data upload from boreal-05
+
+========================================
+EMERGENCY CONTACT
+========================================
+Phone: +1-614-264-2074
+Email: gitdeeper@gmail.com
+
+========================================

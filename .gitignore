@@ -1,0 +1,123 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+.venv.bak/
+env.bak/
+venv.bak/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+*.pyc
+
+# Testing
+.pytest_cache/
+.coverage
+.coverage.*
+*.coverage
+.coverage.xml
+htmlcov/
+.tox/
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+
+# Documentation
+docs/_build/
+docs/build/
+site/
+
+# Data files
+*.db
+*.sqlite3
+*.sqlite
+*.npy
+*.npz
+*.h5
+*.hdf5
+*.nc
+*.fasta
+*.fastq
+*.fna
+*.sam
+*.bam
+
+# Logs
+*.log
+logs/
+
+# Environment files
+.env
+.env.*
+!.env.example
+
+# Config files
+*.local.yaml
+*.local.yml
+config.local.yaml
+config.local.yml
+
+# Jupyter
+.ipynb_checkpoints
+*.ipynb_checkpoints
+*.jupyter
+
+# Docker
+.dockerignore
+*.pid
+
+# OS
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Project specific
+data/raw/
+data/processed/
+data/external/
+*.mnis.json
+recordings/
+backups/
+
+# Dashboard
+dashboard/node_modules/
+dashboard/dist/
+dashboard/build/
+dashboard/.cache/
+npm-debug.log*
+
+# Secret files
+*.key
+*.pem
+*.crt
+secrets/
+upload_fungi_mycel.py

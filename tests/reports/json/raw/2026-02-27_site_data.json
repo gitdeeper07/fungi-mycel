@@ -1,0 +1,101 @@
+{
+  "timestamp": "2026-02-27T06:00:00Z",
+  "report_id": "JSON-2026-02-27-001",
+  "sites": [
+    {
+      "site_id": "bialowieza-01",
+      "mnis": 0.19,
+      "class": "EXCELLENT",
+      "parameters": {
+        "eta_nw": 0.88,
+        "rho_e": 0.89,
+        "grad_c": 0.92,
+        "ser": 1.02,
+        "k_topo": 1.87,
+        "e_a": 0.85,
+        "abi": 2.10,
+        "bfs": 0.82
+      },
+      "alerts": []
+    },
+    {
+      "site_id": "sudbury-01",
+      "mnis": 0.82,
+      "class": "COLLAPSE",
+      "parameters": {
+        "eta_nw": 0.28,
+        "rho_e": 0.19,
+        "grad_c": 0.41,
+        "ser": 1.52,
+        "k_topo": 1.35,
+        "e_a": 0.32,
+        "abi": 1.12,
+        "bfs": 0.15
+      },
+      "alerts": [
+        {
+          "level": "CRITICAL",
+          "type": "COLLAPSE_RISK",
+          "message": "Network collapse imminent",
+          "recommendation": "Immediate inoculation"
+        }
+      ]
+    },
+    {
+      "site_id": "caledonian-03",
+      "mnis": 0.79,
+      "class": "CRITICAL",
+      "parameters": {
+        "eta_nw": 0.35,
+        "rho_e": 0.28,
+        "grad_c": 0.41,
+        "ser": 1.52,
+        "k_topo": 1.38,
+        "e_a": 0.34,
+        "abi": 1.21,
+        "bfs": 0.22
+      },
+      "alerts": [
+        {
+          "level": "CRITICAL",
+          "type": "SER_IMBALANCE",
+          "message": "Parasitic exchange detected",
+          "recommendation": "Increase planting density"
+        }
+      ]
+    },
+    {
+      "site_id": "amazon-02",
+      "mnis": 0.71,
+      "class": "CRITICAL",
+      "parameters": {
+        "eta_nw": 0.34,
+        "rho_e": 0.42,
+        "grad_c": 0.58,
+        "ser": 1.38,
+        "k_topo": 1.62,
+        "e_a": 0.48,
+        "abi": 2.12,
+        "bfs": 0.41
+      },
+      "alerts": [
+        {
+          "level": "HIGH",
+          "type": "WEATHERING_DECLINE",
+          "message": "η_NW below critical threshold",
+          "recommendation": "Monitor weekly"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "total_sites": 39,
+    "active_alerts": 12,
+    "critical_alerts": 2,
+    "high_alerts": 3,
+    "medium_alerts": 5,
+    "low_alerts": 2,
+    "mean_mnis": 0.47,
+    "std_mnis": 0.19
+  }
+}

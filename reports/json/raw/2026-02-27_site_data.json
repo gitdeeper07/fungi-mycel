@@ -1,0 +1,49 @@
+{
+  "timestamp": "2026-02-27T06:00:00Z",
+  "report_id": "JSON-2026-02-27",
+  "sites": [
+    {
+      "site_id": "sudbury-01",
+      "mnis": 0.82,
+      "class": "COLLAPSE",
+      "parameters": {
+        "eta_nw": 0.28,
+        "rho_e": 0.19,
+        "bfs": 0.15
+      }
+    },
+    {
+      "site_id": "caledonian-03",
+      "mnis": 0.79,
+      "class": "CRITICAL",
+      "parameters": {
+        "grad_c": 0.41,
+        "k_topo": 1.38,
+        "ser": 1.52
+      }
+    },
+    {
+      "site_id": "amazon-02",
+      "mnis": 0.71,
+      "class": "CRITICAL",
+      "parameters": {
+        "eta_nw": 0.34,
+        "ser": 1.38
+      }
+    }
+  ],
+  "summary": {
+    "total_sites": 39,
+    "critical_alerts": 2,
+    "high_alerts": 3,
+    "medium_alerts": 1,
+    "mean_mnis": 0.47,
+    "class_distribution": {
+      "EXCELLENT": 5,
+      "GOOD": 15,
+      "MODERATE": 12,
+      "CRITICAL": 5,
+      "COLLAPSE": 2
+    }
+  }
+}
